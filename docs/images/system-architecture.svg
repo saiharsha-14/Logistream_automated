@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 850" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="eventbridgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1b3d"/>
+      <stop offset="100%" stop-color="#1d122b"/>
+    </linearGradient>
+    
+    <linearGradient id="lambdaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b2314"/>
+      <stop offset="100%" stop-color="#24140a"/>
+    </linearGradient>
+
+    <linearGradient id="apiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#132e27"/>
+      <stop offset="100%" stop-color="#0a1a16"/>
+    </linearGradient>
+
+    <linearGradient id="s3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3622"/>
+      <stop offset="100%" stop-color="#0d1f13"/>
+    </linearGradient>
+
+    <linearGradient id="rdsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14283e"/>
+      <stop offset="100%" stop-color="#0b1726"/>
+    </linearGradient>
+
+    <linearGradient id="snsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#361a2b"/>
+      <stop offset="100%" stop-color="#200d19"/>
+    </linearGradient>
+
+    <!-- Marker Filters for Arrows -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f97316"/>
+    </marker>
+
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#c084fc"/>
+    </marker>
+
+    <!-- Glow Effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1100" height="850" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.05">
+    <path d="M 0 0 L 1100 0 M 0 50 L 1100 50 M 0 100 L 1100 100 M 0 150 L 1100 150 M 0 200 L 1100 200 M 0 250 L 1100 250 M 0 300 L 1100 300 M 0 350 L 1100 350 M 0 400 L 1100 400 M 0 450 L 1100 450 M 0 500 L 1100 500 M 0 550 L 1100 550 M 0 600 L 1100 600 M 0 650 L 1100 650 M 0 700 L 1100 700 M 0 750 L 1100 750 M 0 800 L 1100 800" stroke="#ffffff" stroke-width="1"/>
+    <path d="M 0 0 L 0 850 M 50 0 L 50 850 M 100 0 L 100 850 M 150 0 L 150 850 M 200 0 L 200 850 M 250 0 L 250 850 M 300 0 L 300 850 M 350 0 L 350 850 M 400 0 L 400 850 M 450 0 L 450 850 M 500 0 L 500 850 M 550 0 L 550 850 M 600 0 L 600 850 M 650 0 L 650 850 M 700 0 L 700 850 M 750 0 L 750 850 M 800 0 L 800 850 M 850 0 L 850 850 M 900 0 L 900 850 M 950 0 L 950 850 M 1000 0 L 1000 850 M 1050 0 L 1050 850" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- TITLE -->
+  <text x="550" y="45" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="bold" fill="#f8fafc" letter-spacing="1">LOGISTREAM ARCHITECTURE</text>
+  <text x="550" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#94a3b8">Automated Serverless Logistics ETL Pipeline</text>
+
+  <!-- ==================== STEP FUNCTIONS BOX (CONTAINER) ==================== -->
+  <rect x="70" y="320" width="960" height="250" rx="16" fill="#111827" fill-opacity="0.8" stroke="#0284c7" stroke-width="2" stroke-dasharray="8,4" filter="url(#shadow)"/>
+  
+  <!-- Step Functions Badge Header -->
+  <rect x="90" y="303" width="280" height="34" rx="6" fill="#0369a1"/>
+  <text x="105" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">AWS Step Functions Orchestrator</text>
+  <text x="360" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7dd3fc">LogiStreamPipelineOrchestrator</text>
+
+  <!-- ==================== CONNECTIONS / ARROWS ==================== -->
+  
+  <!-- 1. EventBridge to Seed Lambda -->
+  <path d="M 230 175 L 230 210" fill="none" stroke="#c084fc" stroke-width="2.5" marker-end="url(#arrow-purple)"/>
+  
+  <!-- 2. Seed Lambda to Shippo API -->
+  <path d="M 310 245 L 470 245" fill="none" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrow-orange)"/>
+  
+  <!-- 3. EventBridge 4hr to Step Functions Container Boundary -->
+  <path d="M 850 175 L 850 320" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-dasharray="4" marker-end="url(#arrow-purple)"/>
+  <text x="860" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#c084fc">Triggers Every 4 Hours</text>
+
+  <!-- 4. Step 1 -> Step 2 inside SFN -->
+  <path d="M 370 440 L 430 440" fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- 5. Step 2 -> Step 3 inside SFN -->
+  <path d="M 680 440 L 740 440" fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- 6. Extract Lambda calls Shippo API (Upward/Downward flow) -->
+  <path d="M 250 375 L 250 280 L 470 280" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-orange)"/>
+  <text x="320" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fb923c">Fetch API Data</text>
+
+  <!-- 7. Extract Lambda writes to S3 -->
+  <path d="M 250 505 L 250 670" fill="none" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrow)"/>
+  
+  <!-- 8. Transform Lambda reads S3 -->
+  <path d="M 280 690 L 530 690 L 530 505" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrow)"/>
+  <text x="370" y="680" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#4ade80">Read Raw JSON</text>
+
+  <!-- 9. Transform Lambda writes to RDS -->
+  <path d="M 610 505 L 610 670" fill="none" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+
+  <!-- ==================== NODES / COMPONENTS ==================== -->
+
+  <!-- TOP LEFT: EventBridge (Daily Seed Trigger) -->
+  <g transform="translate(110, 100)" filter="url(#shadow)">
+    <rect width="240" height="75" rx="10" fill="url(#eventbridgeGrad)" stroke="#a855f7" stroke-width="1.5"/>
+    <rect x="12" y="15" width="45" height="45" rx="8" fill="#a855f7" fill-opacity="0.2"/>
+    <!-- Clock/Calendar Icon -->
+    <path d="M 34 27 A 10 10 0 1 0 34 47 A 10 10 0 1 0 34 27 Z M 34 32 L 34 37 L 38 39" stroke="#c084fc" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="68" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#f3e8ff">Amazon EventBridge</text>
+    <text x="68" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c084fc">Daily Seed Schedule</text>
+    <text x="68" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#93c5fd">cron(15 18 * * ? *)</text>
+  </g>
+
+  <!-- TOP RIGHT: EventBridge (4-Hour ETL Trigger) -->
+  <g transform="translate(730, 100)" filter="url(#shadow)">
+    <rect width="240" height="75" rx="10" fill="url(#eventbridgeGrad)" stroke="#a855f7" stroke-width="1.5"/>
+    <rect x="12" y="15" width="45" height="45" rx="8" fill="#a855f7" fill-opacity="0.2"/>
+    <path d="M 34 27 A 10 10 0 1 0 34 47 A 10 10 0 1 0 34 27 Z M 34 32 L 34 37 L 38 37" stroke="#c084fc" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="68" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#f3e8ff">Amazon EventBridge</text>
+    <text x="68" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c084fc">4-Hour ETL Trigger</text>
+    <text x="68" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#93c5fd">cron(30 */4 * * ? *)</text>
+  </g>
+
+  <!-- MIDDLE TOP LEFT: Seed API Lambda -->
+  <g transform="translate(110, 210)" filter="url(#shadow)">
+    <rect width="200" height="70" rx="10" fill="url(#lambdaGrad)" stroke="#f97316" stroke-width="1.5"/>
+    <rect x="12" y="12" width="45" height="45" rx="8" fill="#f97316" fill-opacity="0.2"/>
+    <!-- Lambda Icon (λ) -->
+    <text x="28" y="42" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#fb923c">λ</text>
+    <text x="68" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#ffedd5">LogiStream-SeedAPI</text>
+    <text x="68" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fb923c">AWS Lambda</text>
+  </g>
+
+  <!-- MIDDLE TOP RIGHT: External Shippo API -->
+  <g transform="translate(470, 220)" filter="url(#shadow)">
+    <rect width="210" height="80" rx="10" fill="url(#apiGrad)" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="12" y="17" width="45" height="45" rx="8" fill="#10b981" fill-opacity="0.2"/>
+    <!-- Globe/API Icon -->
+    <circle cx="34" cy="40" r="12" stroke="#34d399" stroke-width="2" fill="none"/>
+    <path d="M 22 40 L 46 40 M 34 28 C 38 32 38 48 34 52 C 30 48 30 32 34 28 Z" stroke="#34d399" stroke-width="1.5" fill="none"/>
+    <text x="68" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#ecfdf5">Shippo API</text>
+    <text x="68" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#34d399">Multi-Carrier Logistics</text>
+  </g>
+
+  <!-- INSIDE SFN 1: Extract Lambda -->
+  <g transform="translate(130, 375)" filter="url(#shadow)">
+    <rect width="240" height="130" rx="10" fill="url(#lambdaGrad)" stroke="#f97316" stroke-width="1.5"/>
+    <rect x="15" y="15" width="40" height="40" rx="8" fill="#f97316" fill-opacity="0.2"/>
+    <text x="29" y="42" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#fb923c">λ</text>
+    <text x="65" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#ffedd5">ExtractFromAPI</text>
+    <text x="65" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fb923c">LogiStream-ExtractToS3</text>
+    <line x1="15" y1="70" x2="225" y2="70" stroke="#f97316" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="15" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fed7aa">• Pulls live payload from API</text>
+    <text x="15" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fed7aa">• Saves raw JSON to S3 Bucket</text>
+  </g>
+
+  <!-- INSIDE SFN 2: Transform Lambda -->
+  <g transform="translate(440, 375)" filter="url(#shadow)">
+    <rect width="240" height="130" rx="10" fill="url(#lambdaGrad)" stroke="#f97316" stroke-width="1.5"/>
+    <rect x="15" y="15" width="40" height="40" rx="8" fill="#f97316" fill-opacity="0.2"/>
+    <text x="29" y="42" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#fb923c">λ</text>
+    <text x="65" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#ffedd5">TransformAndValidate</text>
+    <text x="65" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fb923c">LogiStream-TransformAndLoad</text>
+    <line x1="15" y1="70" x2="225" y2="70" stroke="#f97316" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="15" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fed7aa">• Auto-creates schema if missing</text>
+    <text x="15" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fed7aa">• Inserts cleaned data into RDS</text>
+  </g>
+
+  <!-- INSIDE SFN 3: SNS Success Notification -->
+  <g transform="translate(750, 375)" filter="url(#shadow)">
+    <rect width="240" height="130" rx="10" fill="url(#snsGrad)" stroke="#ec4899" stroke-width="1.5"/>
+    <rect x="15" y="15" width="40" height="40" rx="8" fill="#ec4899" fill-opacity="0.2"/>
+    <!-- Bell/Notification Icon -->
+    <path d="M 35 26 C 30 26 27 30 27 35 L 27 40 L 24 43 L 46 43 L 43 40 L 43 35 C 43 30 40 26 35 26 Z M 32 46 C 32 48 33.5 49 35 49 C 36.5 49 38 48 38 46" stroke="#f472b6" stroke-width="1.5" fill="none"/>
+    <text x="65" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#fce7f3">SendSuccessAlert</text>
+    <text x="65" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#f472b6">Amazon SNS Topic</text>
+    <line x1="15" y1="70" x2="225" y2="70" stroke="#ec4899" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="15" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fbcfe8">• Publishes status report</text>
+    <text x="15" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fbcfe8">• Dispatches email alerts</text>
+  </g>
+
+  <!-- BOTTOM LEFT: Amazon S3 (Raw Landing Zone) -->
+  <g transform="translate(130, 670)" filter="url(#shadow)">
+    <rect width="240" height="80" rx="10" fill="url(#s3Grad)" stroke="#22c55e" stroke-width="1.5"/>
+    <rect x="15" y="18" width="45" height="45" rx="8" fill="#22c55e" fill-opacity="0.2"/>
+    <!-- Bucket/Folder Icon -->
+    <path d="M 26 32 L 42 32 L 44 48 L 24 48 Z M 23 32 C 23 29 45 29 45 32" stroke="#4ade80" stroke-width="1.5" fill="none"/>
+    <text x="68" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#f0fdf4">Amazon S3 Bucket</text>
+    <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#4ade80">Raw Landing Zone</text>
+    <text x="68" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#86efac">raw_shipments/*.json</text>
+  </g>
+
+  <!-- BOTTOM RIGHT: AWS RDS MySQL -->
+  <g transform="translate(490, 670)" filter="url(#shadow)">
+    <rect width="250" height="80" rx="10" fill="url(#rdsGrad)" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="15" y="18" width="45" height="45" rx="8" fill="#0284c7" fill-opacity="0.2"/>
+    <!-- Database Cylinder Icon -->
+    <ellipse cx="37" cy="30" rx="12" ry="4" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+    <path d="M 25 30 L 25 48 C 25 52 49 52 49 48 L 49 30 M 25 39 C 25 43 49 43 49 39" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+    <text x="68" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#f0f9ff">AWS RDS MySQL</text>
+    <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#38bdf8">logistics_db.shipments</text>
+    <text x="68" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#7dd3fc">Structured Target Storage</text>
+  </g>
+
+  <!-- FOOTER LEGEND -->
+  <g transform="translate(300, 805)">
+    <circle cx="0" cy="0" r="5" fill="#f97316"/>
+    <text x="12" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Lambda Compute</text>
+    
+    <circle cx="140" cy="0" r="5" fill="#c084fc"/>
+    <text x="152" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Cron Trigger</text>
+
+    <circle cx="260" cy="0" r="5" fill="#22c55e"/>
+    <text x="272" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">S3 Data Lake</text>
+
+    <circle cx="380" cy="0" r="5" fill="#38bdf8"/>
+    <text x="392" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">RDS Database</text>
+  </g>
+
+</svg>

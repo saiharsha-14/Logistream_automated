@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+
+# Terraform Secrets & State Files
+terraform.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/
+lambda_src/*.zip
